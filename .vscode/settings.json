@@ -4,6 +4,7 @@
         "string_view": "cpp",
         "chrono": "cpp",
         "random": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "*.tcc": "cpp"
     }
 }
