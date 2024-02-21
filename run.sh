@@ -13,4 +13,4 @@ cmake ..
 make
 
 # 运行生成的可执行文件
-# ./merge_images
+./merge_images
