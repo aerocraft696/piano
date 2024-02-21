@@ -1,7 +1,10 @@
 #!/bin/bash
-
+BUILD_DIR=build
+if [[ ! -d "${BUILD_DIR}" ]]; then
+  mkdir -p ${BUILD_DIR}
+fi
 # 进入 build 文件夹
-cd build
+cd ${BUILD_DIR}
 
 # 运行 CMake
 cmake ..
@@ -10,4 +13,4 @@ cmake ..
 make
 
 # 运行生成的可执行文件
-./merge_images
+# ./merge_images
