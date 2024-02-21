@@ -5,6 +5,10 @@
         "chrono": "cpp",
         "random": "cpp",
         "limits": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "functional": "cpp",
+        "mutex": "cpp",
+        "condition_variable": "cpp",
+        "iostream": "cpp"
     }
 }
