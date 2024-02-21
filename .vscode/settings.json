@@ -5,6 +5,8 @@
         "chrono": "cpp",
         "random": "cpp",
         "limits": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "memory": "cpp",
+        "condition_variable": "cpp"
     }
 }

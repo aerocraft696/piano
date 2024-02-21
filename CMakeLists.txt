@@ -5,4 +5,5 @@ find_package(OpenCV REQUIRED)
 
 add_executable(merge_images src/main.cpp)
 
-target_link_libraries(merge_images ${OpenCV_LIBS})
+# target_link_libraries(merge_images ${OpenCV_LIBS})
+target_link_libraries(merge_images ${OpenCV_LIBS} -pthread)

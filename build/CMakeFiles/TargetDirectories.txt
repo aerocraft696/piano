@@ -1,3 +1,0 @@
-/home/csoft/luyao/projects/merging_picture/build/CMakeFiles/rebuild_cache.dir
-/home/csoft/luyao/projects/merging_picture/build/CMakeFiles/edit_cache.dir
-/home/csoft/luyao/projects/merging_picture/build/CMakeFiles/merge_images.dir
