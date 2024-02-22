@@ -36,7 +36,8 @@ int main() {
         return -1;
     }
     Mat image1, image2, image3;   
-    while (true) {
+    int i = 0;
+    while (i < 100) {
         // 从摄像头中读取图像
         cap1.read(image1);
         cap2.read(image2);
@@ -56,24 +57,26 @@ int main() {
         image1.copyTo(mergedImage(Rect(0, 0, image1.cols, image1.rows)));
         image2.copyTo(mergedImage(Rect(image1.cols, 0, image2.cols, image2.rows)));
         image3.copyTo(mergedImage(Rect(image1.cols + image2.cols, 0, image3.cols, image3.rows)));
-
+        string filename = "merged_image.png";
+        imwrite(filename, mergedImage);
         // 显示合并后的图片
         imshow("Merged Image", mergedImage);
 
         // 设置鼠标回调
         // setMouseCallback("Merged Image", onMouse, &mergedImage);
 
-        // 按Esc键退出循环
-        string userInput;
-        cin >> userInput;
-        if (userInput == "00") {
-            break;
-        }
+        // // 按Esc键退出循环
+        // string userInput;
+        // cin >> userInput;
+        // if (userInput == "00") {
+        //     break;
+        // }
+        i++;
     }
     // 释放摄像头
     cap1.release();
     cap2.release();
     cap3.release();
-
+    destroyAllWindows();
     return 0;
 }
